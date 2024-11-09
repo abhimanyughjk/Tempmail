@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kodular Coder</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+
+    var elements = document.getElementsByTagName('a');
+    for (var i = 0, len = elements.length; i < len; i++) {
+        elements[i].onclick = function () {
+            var link =  elements[i].getAttribute("href");
+            console.log(link);
+        }
+    }
+</script>
+    
+</body>
+</html>
